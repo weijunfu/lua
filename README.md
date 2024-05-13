@@ -25,3 +25,35 @@
 + WEB服务器中间件：比如Nginx扩展
 + 数据库操作脚本
 + 缓存操作脚本：比如Redis使用lua作为一个原子操作
+
+### 1.3 Hello
+
+```lua
+-- hello.lua
+print("Hello World!")
+```
+
+相关命令：
++ `lua hello.lua`：执行
++ `luac hello.lua`： 输出文件`luac.out`，然后使用`lua luac.out`执行
++ `luac -o hello hello.lua`：输出文件`hello`, 然后使用`lua hello`执行
+
+### 1.4 注释
+
+Lua支持单行注释和多行注释。
+
+#### 1.4.1 单行注释
+
+```lua
+-- 注释内容
+
+```
+
+#### 1.4.2 多行注释
+
+```lua
+--[[
+    这是多行注释
+]]--
+
+```
